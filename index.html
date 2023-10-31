@@ -5,35 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <script src="script.js"></script> -->
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <form action="" class="form" id="form">
-        <input type="text" id="search" placeholder="Search">
+    <div class="heading">
+        GITHUB USER PROFILE VIEWER
+    </div>
+    <form action="" class="form" onsubmit="return formSubmit()">
+        <input type="text" id="search" autofocus placeholder="Search Github Profile" required />
     </form>
     <main id="main">
         <div class="card">
             <div id="imgbox">
-                <img src="https://source.unsplash.com/random/200x200?sig=1" alt="" class="avatar">
+                <img src="" alt="" class="avatar" id="avatar">
             </div>
             <div class="userinfo">
-                <h2>Name</h2>
-                <p>Bio</p>
-                <ul class="info">
-                    <li>Followers</li>
-                    <li>Following</li>
-                    <li>Repost</li>
-                </ul>
+                <h2 id="new">Username:</h2>
+                <h2 id="username"></h2>
+                <h3 id="new">Name:</h3>
+                <h3 id="name"></h3>
+                <h3 id="new">Bio:</h3>
+                <p id="bio"></p>
+                <div class="info">
+                    <div id="new">
+                        Location
+                    </div>
+                        <div id="location"></div>
+                        <div id="new">Followers</div>
+                        <div id="followers"></div>
+                        <div id="new">Following</div>
+                        <div id="following"></div>
+                
+                </div>
             </div>
-            <div class="Repost">
-                <a class="repo" href="#" target="_blank">Repo1</a>
-                <a class="repo" href="#" target="_blank">Repo2</a>
-                <a class="repo" href="#" target="_blank">Repo3</a>
-            </div>
-        </div>
     </main>
+    <script src="./script.js"></script>
 </body>
 
 </html>
