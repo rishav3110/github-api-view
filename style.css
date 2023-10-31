@@ -1,0 +1,19 @@
+.imgbox{
+    width: 100px;
+    height: 100px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#imgbox img{
+  border-radius: 100px;
+}
